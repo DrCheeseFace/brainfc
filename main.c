@@ -1,12 +1,16 @@
 #include "lib/t_tape.h"
+#include <string.h>
 
 int main(void) {
-	void *tape_handle = T_tape_create(8);
+	char instructions[] =
+		"++++++++[>++++[>++>+++>+++>+<<<<-]>+>+>->>+[<]<-]>>.>---.+++++++..+++.>>.<-.<.+++.------.--------.>>+.>++.";
+	// char instructions[] = "+++++[-]";
+	void *tape_handle = T_tape_create(512);
+	t_tape_init_instructions(tape_handle, instructions, strlen(instructions));
 	t_print_info(tape_handle);
-	t_data_idx_increment(tape_handle);
-	t_data_idx_decrement(tape_handle);
-	t_data_plus(tape_handle);
-	t_data_minus(tape_handle);
+	while (t_step(tape_handle)) {
+		continue;
+	}
 	t_tape_destroy(tape_handle);
 	return 0;
 }

@@ -1,6 +1,5 @@
 #include "../lib/mylib.h"
-int main(void)
-{
+int main(void) {
 	sayhi();
 	return 0;
 }

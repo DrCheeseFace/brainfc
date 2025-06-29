@@ -1,4 +1,5 @@
 # Brainfuq in C
-![](https://upload.wikimedia.org/wikipedia/commons/b/b9/Youtube_loading_symbol_1_(wobbly).gif)
+this is me learning C (properly this time) so i can make valorant 2
 
-gimme a minute almost done
+![](https://media.tenor.com/N7FRYKcRUbsAAAAM/green-cat-alien-cat.gif)
+
